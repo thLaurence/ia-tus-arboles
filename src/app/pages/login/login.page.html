@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar color="go">
+    <ion-title class="center">Iniciando Sesión</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <img class="center-img small-img" src="assets/img/login.png" alt="">
+  <!--Email-->
+  <ion-item class="space-top">
+    <ion-label position="floating" color="go">Email:</ion-label>
+    <ion-input id="email" type="text" placeholder="Ingrese su email" 
+               name="email" required [(ngModel)]="email"></ion-input>
+  </ion-item>
+  <!--Contraseña-->
+  <ion-item class="space-top">
+    <ion-label position="floating" color="go">Contraseña:</ion-label>
+    <ion-input id="password" type="password" placeholder="Ingrese su contraseña"
+               name="password" required [(ngModel)]="password"></ion-input>
+  </ion-item>
+
+  <ion-button id="login" class="space-button" type="submit" expand="block" color="go" (click)="onSubmitLogin()">
+    Iniciar sesión
+  </ion-button>
+  <br>
+  <div>
+    <h3 class="short center">¿No te has registrado?</h3>
+    <ion-button class="fuente" expand="block" fill="clear" shape="round" color="go" routerLink="/register">
+      Registrate
+    </ion-button>
+  </div>
+  
+</ion-content>

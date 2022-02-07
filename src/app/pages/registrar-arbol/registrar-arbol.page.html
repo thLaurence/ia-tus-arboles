@@ -1,0 +1,35 @@
+<ion-header onload="noIngresado()">
+  <ion-toolbar color="go">
+    <ion-buttons slot="start">
+      <ion-back-button
+        defaultHref="/mis-arboles"
+        text=""
+        color="light"
+      ></ion-back-button>
+    </ion-buttons>
+    <ion-title>Mis Árboles</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item class="space-top">
+    <ion-label position="floating" color="go">Nombre del árbol</ion-label>
+    <ion-input type="text" [(ngModel)]="newArbol.nombre" required></ion-input>
+  </ion-item>
+
+  <ion-item class="">
+    <ion-label position="floating" color="go">Comentario</ion-label>
+    <ion-textarea type="textarea" [(ngModel)]="newArbol.comentario" required></ion-textarea>
+  </ion-item>
+
+  <ion-item class="space-top">
+    <ion-label position="floating" color="go">Enlace a imagen</ion-label>
+    <ion-input type="text" [(ngModel)]="newArbol.enlace" required></ion-input>
+  </ion-item>
+
+  <ion-button class="space-top" (click)="addArbol()" expand="full" color="go">
+    Agregar árbol
+  </ion-button>
+
+  <ion-img class="img-style" src="assets/img/leaf.png"></ion-img>
+</ion-content>

@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="inicioMenu()" color="go">
+        <ion-icon slot="icon-only" name="menu-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+  <ion-img class="center" src="assets/img/Logo3.png"></ion-img>
+  <ion-list>
+    <ion-item class="space-item" *ngFor="let c of componentes"
+        [routerLink] = "c.redirecTo"
+        detail="true"> 
+        <ion-icon [name]="c.icon"
+          slot="start"
+          color="go"></ion-icon> 
+          {{c.name}}
+    </ion-item>
+    <ion-img class="small-img center-img" src="assets/img/TusArboles.png"></ion-img>
+  </ion-list>
+  <ion-button (click)="cerrar()" expand="block" fill="clear" shape="round" color="go">
+     Cerrar sesión
+  </ion-button>
+</ion-content>

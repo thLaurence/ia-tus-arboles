@@ -1,0 +1,54 @@
+.text-center {
+    margin-left: 0px;
+}
+
+.i-text-center {
+    margin-left: 75px;
+}
+
+.logo {
+    margin-top: 20px;
+}
+.space-top {
+    margin-top: 20px;
+}
+
+.space-button {
+    margin-top: 60px;
+}
+
+.space-input {
+    margin-top: 20px;
+}
+
+ion-input {
+    --padding-bottom: 4px;
+    --padding-end: 4px;
+    --padding-start: 4px;
+    --padding-top: 4px;
+}
+
+.center-img {
+    margin: auto;
+    display:block;
+}
+
+.small-img {
+    margin-top: 30px;
+    width: 150px;
+    height: 150px;
+}
+
+.center {
+    text-align: center;
+}
+
+.short {
+    font-size: medium;
+    margin-bottom: -14px;
+}
+
+.fuente {
+    text-transform: capitalize;
+    font-size: medium;
+}

@@ -1,0 +1,91 @@
+<ion-header >
+  <ion-toolbar color="go">
+    <ion-buttons slot="start">
+      <ion-back-button 
+          defaultHref="/inicio2"
+          text=""
+          color="light"
+          ></ion-back-button>
+    </ion-buttons>
+    <ion-title class="">Prólogo</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!--Introducción-->
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle>Mensaje importante</ion-card-subtitle>
+      <ion-card-title>¡Bienvenidos!</ion-card-title>
+    </ion-card-header>
+    
+    <ion-card-content>
+      Muchas gracias por descargar nuestra aplicación, espero puedas aprender
+      mucho mientras la uses y que te resulte cómodo aprender sobre nuestro país.
+      <ion-img class="space" src="assets/img/TusArboles.png"></ion-img>
+    </ion-card-content>
+  </ion-card>
+  
+  <!--¿De qué trata?-->
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle>¿De qué trata?</ion-card-subtitle>
+      <ion-card-title>Tus Arboles</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      En esta aplicación podrás encontrar información válida sobre cada uno
+      de los árboles que se encuentran a lo largo de nuestro país. <br>
+      Además tienes la posibilidad de conocer árboles a partir de su región nativa.
+      <ion-img class="space" src="assets/img/tree.jpg"></ion-img>
+    </ion-card-content>
+  </ion-card>
+  <!--Más información-->
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle>Que variado es nuestro país</ion-card-subtitle>
+      <ion-card-title>Información regional</ion-card-title>
+      <ion-card-content>
+        Como te nombramos anteriormente, podrás visitar cada una de las regiones de nuestro país
+        y nutrirte de información sobre cada uno de los árboles, bosques y parques nacionales. También podrás envíar
+        sugerencias o peticiones a nuestros moderadores para ampliar el conocimiento que se muestra al respecto,
+        ya sean curiosidades o imagenes tomadas por ti mismo.
+        <ion-img class="space" src="assets/img/regiones.png"></ion-img>
+      </ion-card-content>
+    </ion-card-header>
+  </ion-card>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle>Comencemos a aprender</ion-card-subtitle>
+      <ion-card-title>¡Vamos allá!</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      Para comenzar te dejaremos 3 páginas donde podras encontrar información 
+      relevante y confiable sobre nuestros árboles y bosques nativos...
+      <br>
+      Haz clic en el logo y serás redirigido al sitio web.
+      <!--Conaf-->
+      <ion-card href="https://www.conaf.cl/nuestros-bosques/bosque-nativo/" target="_blank">
+        <img src="assets/img/conaf.png" alt="conaf">
+      </ion-card>
+      <!--Reforestemos-->
+      <ion-card href="https://www.reforestemos.org/" target="_blank">
+        <img class="image" src="assets/img/reforestemos.png" alt="fundacion_reforestemos">
+      </ion-card>
+      <!--Ciren-->
+      <ion-card href="http://bibliotecadigital.ciren.cl/discover?filtertype_1=subject&filter_relational_operator_1=equals&filter_1=Bosque%20nativo" target="_blank">
+        <img src="assets/img/ciren.png" alt="ciren">
+      </ion-card>
+    </ion-card-content>
+  </ion-card>
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button color="go">
+      <ion-icon name="add-outline"></ion-icon>
+    </ion-fab-button>
+
+    <ion-fab-list side="start">
+      <ion-fab-button href="https://www.instagram.com/laurence_xdxd/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></ion-fab-button>
+      <ion-fab-button href="https://twitter.com/th_Laurence" target="_blank"><ion-icon name="logo-twitter"></ion-icon></ion-fab-button>
+    </ion-fab-list>
+
+  </ion-fab>
+</ion-content>
